@@ -2,6 +2,8 @@
 
 A modern, stylish counter app built with **React** and **Vite**.
 
+preview: https://taleex.github.io/fancy-counter/;
+
 ## ✨ Features
 
 - **Increment/Decrement**: Easily increase or decrease the counter value.
