@@ -9,12 +9,23 @@ export default function Card() {
   const locked = count === 5 ? true : false;
 
   useEffect(() => {
-    window.addEventListener("keydown", (event) => {
+    const handleKeyDown = (event) => {
       if (event.code === "Space") {
+        const newCount = count + 1;
+        if (newCount > 5) {
+          setCount(5);
+          return;
+        }
         setCount(count + 1);
       }
-    });
-  }, []);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [count]);
 
   return (
     <div className={`card${locked ? " card--limit" : ""}`}>
