@@ -2,7 +2,7 @@
 
 A modern, stylish counter app built with **React** and **Vite**.
 
-preview: https://taleex.github.io/fancy-counter/
+preview: taleex-fancycounter.netlify.app
 
 ## ✨ Features
 
